@@ -1,3 +1,5 @@
+import ConfirmButton from "./component/ConfirmButton";
+import InputElement from "./component/InputElement";
 import UserInfo from "./component/UserInfo";
 
 function App() {
@@ -20,6 +22,14 @@ function App() {
           </span>
         </div>
       </UserInfo>
+      <ConfirmButton handleClick={(event) => {
+        event.stopPropagation()
+        event.preventDefault()
+        console.log(event)
+      }}/>
+      <InputElement handleChange={(event) => {
+        console.log(event.target.value)
+      }}/>
     </div>
   );
 }
