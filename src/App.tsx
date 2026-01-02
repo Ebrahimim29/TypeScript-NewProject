@@ -22,11 +22,15 @@ function App() {
           </span>
         </div>
       </UserInfo>
-      <ConfirmButton handleClick={(event) => {
-        event.stopPropagation()
-        event.preventDefault()
-        console.log(event)
-      }}/>
+      <ConfirmButton handleClick={(e:React.MouseEvent<HTMLButtonElement, MouseEvent> , params) => {
+        e.stopPropagation()
+        e.preventDefault()
+        console.log(e)
+        console.log(params);        
+      }}
+      // style={{background:"blue",border:"1px solid black",width:"30%"}}
+      style={{backgroundColor:"yellow",margin:"1rem", }}
+      />
       <InputElement handleChange={(event) => {
         console.log(event.target.value)
       }}/>
