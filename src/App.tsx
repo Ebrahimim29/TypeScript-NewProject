@@ -1,4 +1,5 @@
 import ConfirmButton from "./component/ConfirmButton";
+import Counter from "./component/Counter";
 import InputElement from "./component/InputElement";
 import UserInfo from "./component/UserInfo";
 
@@ -34,6 +35,7 @@ function App() {
       <InputElement handleChange={(event) => {
         console.log(event.target.value)
       }}/>
+      <Counter/>
     </div>
   );
 }
