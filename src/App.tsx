@@ -1,5 +1,6 @@
 import ConfirmButton from "./component/ConfirmButton";
 import Counter from "./component/Counter";
+import Counter1 from "./component/Counter1";
 import InputElement from "./component/InputElement";
 import UserInfo from "./component/UserInfo";
 
@@ -36,6 +37,7 @@ function App() {
         console.log(event.target.value)
       }}/>
       <Counter/>
+      <Counter1/>
     </div>
   );
 }
