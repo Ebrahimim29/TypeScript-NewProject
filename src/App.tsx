@@ -1,10 +1,24 @@
+import { useContext, useEffect } from "react";
 import ConfirmButton from "./component/ConfirmButton";
 import Counter from "./component/Counter";
 import Counter1 from "./component/Counter1";
 import InputElement from "./component/InputElement";
 import UserInfo from "./component/UserInfo";
+import { UserContext } from "./Context/UserContext";
+import UserInfoComponent from "./component/UserInfoComponent";
 
 function App() {
+
+  const context = useContext(UserContext)
+
+  useEffect(() => {
+    context?.setUserInfo({
+      name:"Mohammad",
+      family: "Ebrahimi",
+      age:42
+  })
+  }, [])
+
   return (
     <div>
       Hello....
@@ -38,6 +52,7 @@ function App() {
       }}/>
       <Counter/>
       <Counter1/>
+      <UserInfoComponent/>
     </div>
   );
 }
