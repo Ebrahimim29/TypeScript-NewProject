@@ -9,10 +9,10 @@ import UserInfoComponent from "./component/UserInfoComponent";
 
 function App() {
 
-  const context = useContext(UserContext)
+  const {setUserInfo} = useContext(UserContext)
 
   useEffect(() => {
-    context?.setUserInfo({
+    setUserInfo({
       name:"Mohammad",
       family: "Ebrahimi",
       age:42
