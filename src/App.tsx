@@ -6,6 +6,8 @@ import InputElement from "./component/InputElement";
 import UserInfo from "./component/UserInfo";
 import { UserContext } from "./Context/UserContext";
 import UserInfoComponent from "./component/UserInfoComponent";
+import SearchComponent from "./component/SearchComponent";
+import TimerComponent from "./component/TimerComponent";
 
 function App() {
 
@@ -53,6 +55,8 @@ function App() {
       <Counter/>
       <Counter1/>
       <UserInfoComponent/>
+      <SearchComponent/>
+      <TimerComponent/>
     </div>
   );
 }
