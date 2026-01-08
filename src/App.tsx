@@ -8,6 +8,7 @@ import { UserContext } from "./Context/UserContext";
 import UserInfoComponent from "./component/UserInfoComponent";
 import SearchComponent from "./component/SearchComponent";
 import TimerComponent from "./component/TimerComponent";
+import ClassComponent from "./component/ClassComponent";
 
 function App() {
 
@@ -57,6 +58,7 @@ function App() {
       <UserInfoComponent/>
       <SearchComponent/>
       <TimerComponent/>
+      <ClassComponent name="Hooshang"/>
     </div>
   );
 }
